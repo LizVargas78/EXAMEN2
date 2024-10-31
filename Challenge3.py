@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
+from Graficas import estadistica
 
 # Función auxiliar para obtener datos de los instrumentos seleccionados
 def obtener_datos_instrumentos(instrumentos_seleccionados):
@@ -22,8 +23,8 @@ def obtener_datos_instrumentos(instrumentos_seleccionados):
     return datos
 
 # Cargar el logo y la imagen de México
-logo_path = "Allianz logo.png"
-mexico_image_path = r"C:\Users\Liz\Documents\ClasePhyton\Calculadora\Mexico.jpeg"
+logo_path = "./Allianz_logo.png"  # Cambia la ruta si el logo está en otra carpeta
+mexico_image_path = "./Mexico.jpeg"  # Ruta relativa de la imagen de México
 
 # Función para convertir la imagen a base64
 def get_base64_image(image_path):
@@ -167,11 +168,6 @@ elif option == "Estadística":
     # Aquí puedes agregar más contenido específico para la sección de Estadística
     # ...
 
-
-
-# Importando la función estadistica desde el archivo Graficas
-from Graficas import estadistica
-
-# Modificación en la opción de Estadística para llamar a la función estadistica de Graficas.py
+# Llamada a la función estadística desde el archivo Graficas
 if option == "Estadística":
     estadistica()

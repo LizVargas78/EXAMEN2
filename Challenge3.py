@@ -22,9 +22,9 @@ def obtener_datos_instrumentos(instrumentos_seleccionados):
         datos.append(info)
     return datos
 
-# Cargar el logo y la imagen de México
-logo_path = "./Allianz_logo.png"  # Cambia la ruta si el logo está en otra carpeta
-mexico_image_path = "./Mexico.jpeg"  # Ruta relativa de la imagen de México
+# Rutas de los archivos de imagen
+logo_path = "./Allianz logo.png"  # Incluye el espacio en el nombre del archivo
+mexico_image_path = "./Mexico.jpeg"  # Asegúrate de que la extensión sea .jpeg
 
 # Función para convertir la imagen a base64
 def get_base64_image(image_path):
